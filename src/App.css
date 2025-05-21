@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    font-family: "Open Sans", sans-serif;
+
+    background-color: #ebe9e9;
+    margin: 0;
+    padding: 0; 
+    cursor: pointer;
+  
+}
+.main {
+  display: flex;
+  height: calc(100vh - 60px); /* Assuming header is 60px */
+}
+.algo{
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  font-weight: bold;
+
+}
+
+header {
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav-active {
+  background-color: red;
+  color: white;
+}
+
+.nav-active .icon {
+  color: #00bcd4;
+}
+
+
+
+
+/* .main .content{
+    margin-top: 60px;
+    padding: 20px;
+ 
+   
+width: 80%; flex: 0 0 80%;
+  
+    transition: all 0.3s ease-in-out;
+}
+.main .active {
+    width: 100%; flex: 0 0 100%;       
+ 
+}
+.main .sidebarwrapper{
+    width: 20%; flex: 0 0 20%; transition:  all 0.3s ease-in-out; ;
+}
+.main .sidebarwrapper.active{
+    width: 0%; flex: 0 0 0%; transition: all 0.3s ease-in-out; 
+    overflow: hidden;
+}
+.main .sidebarwrapper.active .sidebar{
+    left: -20%; transition: all 0.3s ease-in-out;
+}
+.main .sidebarwrapper .sidebar{
+    width: 20% ; height: 100vh; background-color: #fff; max-height:calc(100% - 60px);
+    position: fixed; top: 60px; left: 0; overflow-y: scroll;overflow-x: hidden; padding-bottom: 40px;
+    transition: all 0.3s ease-in-out; 
+   
+
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: #f1f1f1;
+    
+   
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+  }
+   
+
+  ::-webkit-scrollbar-thumb {
+    background:#c1bdbd; 
+    border-radius: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background:  rgb(26, 135, 218); 
+  
+
+  }
+
+
+.main .sidebarwrapper .sidebar ul{
+    list-style-type: none; padding: 10px; margin: 0;
+    display: flex; flex-direction: column; 
+  
+    height: 100vh; padding-top: 10px;
+}
+
+
+
+.main .sidebarwrapper .sidebar ul li button {
+    color:black;text-align: left; justify-content: left; border-radius: 10px;
+    padding: 8px; font-size: 13px;  text-transform: capitalize; font-family: arial;
+
+}
+
+.main .sidebarwrapper .sidebar ul li :focus{
+    background-color:rgb(26, 135, 218); color:white;
+    font-weight: bold; 
+    transition: all 0.3s ease-in-out;
+}
+
+ 
+.main .sidebarwrapper .sidebar ul li  :focus .icon{
+    color:white;
+    transition: all 0.3s ease-in-out;
+}
+
+.main .sidebarwrapper .sidebar ul .h1{
+    font-size:13px; font-weight: 600; color: black; opacity: 0.4; padding: 10px;
+
+ }
+ .main .sidebarwrapper .sidebar ul li button .icon{
+    font-size: 18px; color: black; margin-right: 10px;
+ }
+
+ 
+ .main .active .dashboardBoxWrapper .dashboardBox2{
+ width: 550px;
+ }
+  */
+
+/* .dashboardBoxWrapper{ border-radius: 10px;
+    width: 100%; height: 100vh;
+    display: flex; flex-wrap: wrap; 
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+   
+
+ }
+
+.dashboardBoxWrapper .dashboardBox{ 
+    width:100%;
+    box-shadow: 0 0 5px rgb(72, 70, 70);
+    height:98vh; background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+ 
+}
+
+.dashboardBoxWrapper .dashboardBox2{ 
+    width: 480px;
+    box-shadow: 0 0 5px rgb(106, 102, 102);
+    height: 270px; background-color:#fff;
+    padding: 20px;
+    border-radius: 10px;
+ 
+}
+
+.topic{
+    font-size: 15px;
+    color: rgb(9, 91, 146);
+    font-weight: bold; text-transform: uppercase; font-family: arial;
+    
+} */
+
+
+/* header */
+
+.header {
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.btn {
+  background: none;
+  border: none;
+}
+
+.dropdown-menu {
+  min-width: 160px;
+  background: #fff;
+  border-radius: 8px;
+  z-index: 999;
+}
+
+.dropdown-menu a {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+
+
+/* sidebaar */
+
+
+/* Sidebar Wrapper */
+.sidebarwrapper {
+   width: 240px;
+  transition: width 0.3s ease;
+  background-color: #1e1e2f;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+  position: relative;
+}
+
+/* When Sidebar is Collapsed */
+.sidebarwrapper.active {
+  width: 70px;
+}
+
+/* Sidebar Container */
+.sidebar {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px 10px;
+  /* scrollbar-width: thin;  */
+   /* scrollbar-color: #444 #1e1e2f;  */
+}
+
+/* Section Title */
+.sidebar .h1 {
+  font-size: 0.9rem;
+  text-transform: none;
+  margin: 1.2rem 0 0.5rem;
+  padding-left: 10px;
+  color: #888;
+}
+
+/* Sidebar List */
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Sidebar List Items */
+.sidebar li {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+/* Sidebar Buttons */
+.sidebar button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #fff;
+  text-align: left;
+  transition: all 0.1s  ease-in-out;
+}
+
+/* Active/hover state */
+.sidebar button:hover {
+  background-color: #333556;
+}
+
+/* Icons inside button */
+.sidebar .icon {
+  font-size: 1.2rem;
+}
+
+/* Collapsed State: hide text, center icons */
+.sidebarwrapper.active .sidebar .h1,
+.sidebarwrapper.active .sidebar button span:not(.icon) {
+  display: none;
+}
+
+.sidebarwrapper.active .sidebar button {
+  justify-content: center;
+  padding: 12px 0;
+}
+
+/* Divider */
+.sidebar hr {
+  border-color: rgba(255, 255, 255, 0.1);
+  margin: 1rem 0;
+}
+
+
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 4px;
+}
+/* .sidebar::-webkit-scrollbar-thumb :hover {
+  background-color: #cb4b0a;
+  
+} */
+
+.sidebar::-webkit-scrollbar-track {
+  background: #1e1e2f;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: #f1f1f1;
+    
+   
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+  }
+   
+
+  ::-webkit-scrollbar-thumb {
+    background:#c1bdbd; 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background:  rgb(26, 135, 218); 
+  
+
+  }

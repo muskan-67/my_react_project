@@ -1,0 +1,31 @@
+.header {
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  background-color:black
+}
+
+.btn {
+  background: none;
+  border: none;
+}
+
+.dropdown-menu {
+  min-width: 160px;
+  background:black;
+  border-radius: 8px;
+  z-index: 999;
+}
+
+.dropdown-menu a {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
