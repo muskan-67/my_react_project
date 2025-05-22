@@ -220,10 +220,10 @@ width: 80%; flex: 0 0 80%;
 .sidebarwrapper {
    width: 240px;
   transition: width 0.3s ease;
-  background-color: #1e1e2f;
+  background-color: #ffffff;
   height: 100vh;
   overflow: hidden;
-  color: #fff;
+  color: #000000;
   position: relative;
 }
 
@@ -248,7 +248,8 @@ width: 80%; flex: 0 0 80%;
   text-transform: none;
   margin: 1.2rem 0 0.5rem;
   padding-left: 10px;
-  color: #888;
+  color: #000000;
+
 }
 
 /* Sidebar List */
@@ -256,12 +257,14 @@ width: 80%; flex: 0 0 80%;
   list-style: none;
   padding-left: 0;
   margin: 0;
+  
 }
 
 /* Sidebar List Items */
 .sidebar li {
   margin-bottom: 10px;
   display: flex;
+ 
 }
 
 /* Sidebar Buttons */
@@ -269,13 +272,14 @@ width: 80%; flex: 0 0 80%;
   display: flex;
   align-items: center;
   gap: 10px;
+   text-decoration: none;
   justify-content: flex-start;
   width: 100%;
   padding: 10px;
   border: none;
   border-radius: 8px;
   background-color: transparent;
-  color: #fff;
+  color: #000000;
   text-align: left;
   transition: all 0.1s  ease-in-out;
 }
@@ -283,6 +287,7 @@ width: 80%; flex: 0 0 80%;
 /* Active/hover state */
 .sidebar button:hover {
   background-color: #333556;
+  color: white;
 }
 
 /* Icons inside button */
@@ -335,7 +340,7 @@ width: 80%; flex: 0 0 80%;
 
   ::-webkit-scrollbar-track {
     background: #f1f1f1; 
-    border-radius: 10px;
+   
   }
    
 
