@@ -1,15 +1,16 @@
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Strategy from "./pages/strategy";
+import Strategy from "./pages/Strategy";
 import Dashboard from "./pages/Dashboard";
 import Portfolio from "./pages/Portfolio";
 import Report from "./pages/Report";
 import Broking from "./pages/Broking";
-import Header from "./component/Header";
-import Sidebar from "./component/sidebar";
 import MySub from "./pages/MySub";
 import Setting from "./pages/Setting";  
+import Header from "./component/Header";
+import Sidebar from "./component/sidebar";
+
 import Subscription from "./pages/Subscription";
 
 import { useState, createContext, useEffect } from "react";
