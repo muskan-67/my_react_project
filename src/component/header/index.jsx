@@ -4,6 +4,7 @@ import { FaRegBell, FaUser } from "react-icons/fa";
 import { IoMdLogOut } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
 import { Link } from "react-router-dom";
+import { IoMdArrowDropdown } from "react-icons/io";
 import { useContext, useState } from "react";
 import { MyContext } from "../../App";
 import Search from "../search";
@@ -30,30 +31,30 @@ const Header = () => {
 
           {/* Sidebar Toggle & Search */}
           <div className="col-sm-3 d-flex align-items-center">
-            <button className="btn p-2 me-3" onClick={toggleSidebar}>
-              {isTogglesidebar ? <RiMenuUnfold3Line size={24} /> : <MdMenuOpen size={24} />}
+            <button className="btnn p-2 me-3" onClick={toggleSidebar}>
+              {isTogglesidebar ? <RiMenuUnfold3Line size={20} /> : <MdMenuOpen size={20} />}
             </button>
-            <Search />
+            <Search/>
           </div>
 
           {/* Actions: Theme, Notifications, Profile */}
           <div className="col-sm-7 d-flex align-items-center justify-content-end">
-            <button className="btn p-2 me-3"><MdOutlineLightMode size={20} /></button>
-            <button className="btn p-2 me-3"><FaRegBell size={18} /></button>
+            <button className="btnn p-2 ml-2"><MdOutlineLightMode size={20} /></button>
+            <button className="btnn p-2 ml-2"><FaRegBell size={18} /></button>
 
             {/* Profile Dropdown */}
             <div className="position-relative">
-              <button className="btn p-2 me-4" onClick={toggleDropdown}>
-                <FaUser size={18} />
+              <button className="btnn p-2 ml-2" onClick={toggleDropdown}>
+                <FaUser size={18} /><span className="ml-2">Welcome User </span><IoMdArrowDropdown size={20}  />
               </button>
 
               {isDropdownOpen && (
                 <div className="dropdown-menu show position-absolute end-0 mt-2 shadow-sm p-2">
                   <ul className="list-unstyled mb-0">
-                    {/* You can add <li><a><CgProfile/> Profile</a></li> here if needed */}
+                
                     <li>
                       <a href="#" className="dropdown-item d-flex align-items-center">
-                        <IoMdLogOut className="me-2" /> Logout
+                        <IoMdLogOut className="mr-2" /> Logout
                       </a>
                     </li>
                   </ul>
