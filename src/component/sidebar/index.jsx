@@ -59,7 +59,7 @@ const Sidebar = () => {
                 <Button className="w-100">
                   <span className="icon"><TbReportSearch  /></span>
                   <span className="icon-text">Live Report</span>
-                  < FaChevronDown className=""/>
+                  < FaChevronDown className="arr"/>
                 </Button>
               </NavLink>
 
