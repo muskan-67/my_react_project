@@ -8,6 +8,9 @@ import Report from "./pages/report";
 import Broking from "./pages/Broking";
 import Header from "./component/Header";
 import Sidebar from "./component/sidebar";
+import MySub from "./pages/MySub";
+import Setting from "./pages/Setting";  
+import Subscription from "./pages/Subscription";
 
 import { useState, createContext, useEffect } from "react";
 import './App.css';
@@ -43,6 +46,9 @@ function App() {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/report" element={<Report />} />
             <Route path="/broking" element={<Broking />} />
+            <Route path="/mysub" element={<MySub />} />
+            <Route path="/setting" element={<Setting />} />
+            <Route path="/subscription" element={<Subscription />} />
           </Routes>
 
         </div>
