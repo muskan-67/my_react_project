@@ -2,7 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Strategy from "./pages/Strategy";
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/dashboard";
 import Portfolio from "./pages/Portfolio";
 import Report from "./pages/Report";
 import Broking from "./pages/Broking";
