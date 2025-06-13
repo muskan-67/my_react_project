@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import Strategy from "./pages/Strategy";
+import Strategy from "./pages/Strategy";
 import Dashboard from "./pages/dashboard";
 import Portfolio from "./pages/Portfolio";
 import Report from "./pages/Report";
@@ -42,7 +42,7 @@ function App() {
           
           <Routes>
             <Route path="/" element={<Strategy />} />
-            {/* <Route path="/strategy" element={<Strategy />} /> */}
+            <Route path="/strategy" element={<Strategy />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/report" element={<Report />} />
